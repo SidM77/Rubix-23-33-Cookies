@@ -1,0 +1,197 @@
+
+  
+  h1 {
+    font-family: 'Montserrat-Black-900', 'Montserrat';
+    font-size: 5 rem;
+    line-height: 1.5;
+    font-weight: 900;
+  }
+  
+  h2 {
+    font-family: 'Abril Fatface','Montserrat';
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 3rem;
+    color:#000000;
+  }
+  
+  h3 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+  }
+  
+  
+  .container-fluid {
+    padding: 3% 5%;
+  }
+  
+  body {
+    font-family: 'Montserrat';
+  }
+  
+  /* Navigation Bar */
+ 
+  
+  .intro-image {
+    width: 120%;
+    transform: rotate(20deg);
+  }
+  .navsumm{
+    padding-left: 0px;
+    padding-bottom: 0%;
+    padding-top: 0%;
+  }
+  .apple-button{
+    border-bottom: 20px;
+  }
+  p {
+    color: #8e2424;
+    font-weight: 700;
+  }
+  
+  #features {
+    padding: 7% 5%;
+    text-align: center;
+  }
+  
+  .feature {
+    padding: 5%;
+  }
+  
+  .flogo {
+    padding-bottom: 10%;
+    color: #b03f3f;
+  }
+  
+  .flogo:hover {
+    color: #7f4141;
+  }
+
+
+  .gb1 {
+    align-items: center;
+    background-image: linear-gradient(190deg,#0d4b29, #1d8040 50%,#a4db96);
+    border: 200px;
+    border-radius: 8px;
+    box-shadow: rgb(255, 255, 255) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #000000;
+    display: flex;
+    font-family: Montserrat;
+    font-size: 60px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: 30px;
+  }
+
+
+  .gb {
+    align-items: center;
+    background-image: linear-gradient(190deg,#b73939, #d6896ae4 50%,#fda582);
+    border: 200px;
+    border-radius: 8px;
+    box-shadow: rgb(250, 250, 250) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #000000;
+    display: flex;
+    font-family: Montserrat;
+    font-size: 60px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    margin:30px;
+  }
+  
+  .button-64:active,
+  .button-64:hover {
+    outline: 0;
+  }
+  
+  .button-64 span {
+    background-color: rgb(243, 243, 243);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+  }
+  
+  .button-64:hover span {
+    background: none;
+  }
+  
+  @media (min-width: 768px) {
+    .button-64 {
+      font-size: 24px;
+      min-width: 196px;
+    }
+  }
+  
+
+  .centerl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+
+  .centerb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+  }
+  #testimonials {
+
+    text-align: center;
+    background-color: #ffc090e6;
+    color: #ce3f3f;
+  }
+  .carousel-item{
+    padding: 7% 15%;
+  }
+  .testimonial-image {
+    width: 100%;
+    margin:20px;
+  
+  }
+  .step{
+    color: #ffffff;
+    font-size: 3rem;
+  }
+  
+  #press {
+    background-color: #EF8172;
+    text-align: center;
+    padding-bottom: 3%;
+  }
+  .press-logo{
+    width:15%;
+    margin:20px 20px 50px;
+  }
+  
+  
+  #loginb{
+    background-color: #000000;
+    color: #fff;
+    height:150px;
+  }
+  
+  

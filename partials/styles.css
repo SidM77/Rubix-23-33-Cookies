@@ -1,0 +1,191 @@
+#title {
+    background-color: #131713;
+    color: #fff;
+    height:150px;
+  }
+
+  #features {
+    background-color: #db9763e9;
+    color: #fff;
+    height: 50%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+  h1 {
+    font-family: 'Montserrat-Black-900', 'Montserrat';
+    font-size: 5 rem;
+    line-height: 1.5;
+    font-weight: 900;
+  }
+  
+  h2 {
+    font-family: 'Abril Fatface','Montserrat';
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 3rem;
+    color:#156539;
+  }
+  
+  h3 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+  }
+  
+  
+  .container-fluid {
+    padding: 3% 5%;
+  }
+  
+  body {
+    font-family: 'Montserrat';
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    padding: 0 ;
+  }
+  
+  .nav-item {
+    padding: 0 18px;
+    font-family: 'Montserrat';
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: 'Montserrat';
+  }
+  
+  .navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-family: 'Sacramento';
+    padding-left: 0px;
+  }
+  
+  .intro-image {
+    width: 120%;
+    transform: rotate(20deg);
+  }
+  .navsumm{
+    padding-left: 0px;
+    padding-bottom: 0%;
+    padding-top: 0%;
+  }
+  .apple-button{
+    border-bottom: 20px;
+  }
+  p {
+    color: #afafaf;
+    font-weight: 400;
+  }
+  
+  #features {
+    padding: 7% 5%;
+    text-align: center;
+  }
+  
+  .feature {
+    padding: 5%;
+  }
+  
+  .flogo {
+    padding: 10%;
+    color: #B1D7B4;
+  }
+  
+  .flogo:hover {
+    color: #7FB77E;
+  }
+
+
+  .gb1 {
+    align-items: center;
+    background-image: linear-gradient(190deg,#0d4b29, #1d8040 50%,#a4db96);
+    border: 200px;
+    border-radius: 8px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Montserrat;
+    font-size: 60px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: 30px;
+  }
+
+
+  .gb2 {
+    align-items: center;
+    background-image: linear-gradient(190deg,#e7d93e, #c4c161e4 50%,#d8d8a4);
+    border: 200px;
+    border-radius: 8px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Montserrat;
+    font-size: 60px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    margin:30px;
+  }
+  
+  .button-64:active,
+  .button-64:hover {
+    outline: 0;
+  }
+  
+  .button-64 span {
+    background-color: rgb(0, 0, 0);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+  }
+  
+  .button-64:hover span {
+    background: none;
+  }
+  
+  @media (min-width: 768px) {
+    .button-64 {
+      font-size: 24px;
+      min-width: 196px;
+    }
+  }
+  
+
+  .centerl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+
+  .centerb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

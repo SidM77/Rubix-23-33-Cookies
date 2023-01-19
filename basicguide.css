@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',cursive;
+    font-weight: 700;
+    line-height: 2.2;
+    font-size: 1rem;
+    background-image: url('bg.jpg');
+}
+
+.container{
+    margin-top: -12rem;
+    /* margin-left: 18rem; */
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#weather:hover{
+    cursor: pointer;
+}
+
+.down{
+    margin-left: 0.25rem;
+    margin-top: 0.875rem;
+    height: 0.875rem;
+}
+
+.menu a {
+    color: grey;
+    letter-spacing: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+}
+
+.menu a:hover {
+    background: rgb(82, 188, 82);
+    color: rgb(82, 188, 82);
+    padding-left: 1.5rem;
+}
+
+.menu {
+    margin-right: -10rem;
+    font-size: 1.25rem;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-left: -13rem;
+}
+
+#options{
+    visibility: hidden;
+    display : block;
+    font-size: 1.5rem;
+    line-height: 3;
+    padding-top: 1rem;
+    padding-left: 2.75rem;
+    border-radius: 0.2rem;
+    height : 14rem;
+    width : 10rem;
+    margin-left: 77rem;
+    margin-top: -3rem;
+    background-color: rgb(239, 238, 238);
+    border: 1px;
+}
+
+#options a{
+    color: gray;
+    text-decoration: none;
+}
+
+.logo{
+    margin-left: 5rem;
+    height : 5rem;
+}
+
+.site-name{
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    font-family: 'Sacramento', cursive;    
+    font-size: 2.5rem;
+}
+
+@media (min-width: 800px) {
+    .nav-main {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .nav-header {
+        padding: 0;
+    }
+
+    .menu {
+        height: auto;
+        display: flex;
+    }
+
+    .menu a {
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+
+    .menu a:hover {
+        padding: 0;
+        background: transparent;
+    }
+}
+
+.header1{
+    font-size: 3rem;
+    margin-top: -3rem;
+    padding-left: 20rem;
+    font-family: 'Montserrat',cursive;
+}
+
+.content{
+    font-family: 'Montserrat',cursive;
+    padding-left: 20rem;
+    font-size: 1.25rem;
+    display: block;
+    width: 65rem;
+}
+
+.leaves{
+    margin-right: 10rem;
+}

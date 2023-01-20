@@ -1,0 +1,75 @@
+body{
+    background-image: url('2pl.webp');   
+    font-family: 'Montserrat',cursive; 
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.navbar img{
+    height : 5rem;
+}
+
+.navbar a{
+    padding-top: 2rem;
+    padding-left: 2.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:active{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+
+.site-name{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-family: 'Sacramento',cursive;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.aboutus{
+    height : 20rem;
+    width : 25rem;
+    background-color: rgb(210, 210, 210);
+    border-radius: 0.4rem;
+    margin-top: 13rem;
+    margin-left: 38rem;
+}
+
+.Siddanth{
+    padding-top: 1.5rem;
+}
+
+.Contact-us img{
+    height: 2rem;
+    padding-right: 0.5rem;
+}
+
+.Contact-us{
+    display: flex;
+    align-items: center;
+    padding-left: 8rem;
+    font-size: 2rem;
+}
+
+p{
+    margin: 0;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.3rem;
+}

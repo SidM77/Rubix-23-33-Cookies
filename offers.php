@@ -1,7 +1,8 @@
 <?php 
 session_start();
-$email=$_SESSION['emailid']; 
+$femail=$_SESSION['emailid']; 
 ?> 
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,27 +21,29 @@ $email=$_SESSION['emailid'];
 
 <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>view</title>
+    <title>Offer</title>
 </head>
 <body>
     <div class= "container">
-        <h1 class="text-center text-white bg-dark">Product</h1>
+        <h1 class="text-center text-white bg-dark">store</h1>
         <br>
         <div class="table-responsive">
         <table class ="table table-bordered table-stripped table-hover">
             <thead>
-                <th>ID</th>
-                <th>Product</th>
+                <th>Buyer's ID</th>
+                <th>Product ID</th>
                 <th>Price/Kg</th>
-                <th>Product image</th>
-                <th>Delete</th>
+                <th>Quanity per kg</th>
+                <th>Status</th>
+                <th>ACCEPT</th>
             </thead>
 
             <tbody>
                 <?php 
                     include 'partials/_dbconnect.php';
-                    if(isset($_POST['view'])){
-                            $displayquery = "SELECT * FROM `imgupload` WHERE `email`= '{$email}'";
+                        
+
+                            $displayquery = "SELECT * FROM `auct` WHERE `femailid`= '{$femail}' ORDER BY `id` ASC";
                             $querydisplay = mysqli_query($conn, $displayquery);
 
                             $row = mysqli_num_rows($querydisplay);
@@ -49,16 +52,18 @@ $email=$_SESSION['emailid'];
                             {
                                 ?>
                                 <tr>
+                                    <td><?php echo $result['bemailid']?></td>
                                     <td><?php echo $result['id']?></td>
-                                    <td><?php echo $result['product'];?></td>
-                                    <td><?php echo $result['price'];?></td>
-                                    <td><img src=" <?php echo $result['image'];?>" height="100px" width="100px" ></td>
-                                    <td><a href="delete.php?id=<?php echo $result['id']; ?>" data-toggle="tooltip" data-placement="bottom" title="DELETE"> <i class="fa fa-trash" aria-hidden="true"></i> </a></td>
+                                    <td><?php echo $result['pricekg'];?></td>
+                                    <td><?php echo $result['quantity'];?></td>
+                                    <td><a href="accept.php?id=<?php echo $result['id']; ?>" data-toggle="tooltip" data-placement="bottom" title="accept"> <i class="btn btn-primary">ACCEPT</i> </a></td>
+                                    <td><a href="del.php?sno=<?php echo $result['sno']; ?>" data-toggle="tooltip" data-placement="bottom" title="DELETE"> <i class="fa fa-trash" aria-hidden="true"></i> </a></td>
+                                </tr>
                                 </tr>
                                 <?php
                             }
                        // }
-                    }
+                    
                 ?>
             </tbody>
 

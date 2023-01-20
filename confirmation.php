@@ -1,15 +1,14 @@
 <?php 
 session_start();
-$email=$_SESSION['emailid']; 
+$bemail=$_SESSION['bemailid']; 
 ?> 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Latest compiled and minified CSS -->
+    <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
 <!-- jQuery library -->
@@ -20,27 +19,28 @@ $email=$_SESSION['emailid'];
 
 <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>view</title>
+    
+    <title>confirm</title>
 </head>
 <body>
-    <div class= "container">
-        <h1 class="text-center text-white bg-dark">Product</h1>
+<div class= "container">
+        <h1 class="text-center text-white bg-dark">ACCEPTED ORDER</h1>
         <br>
         <div class="table-responsive">
         <table class ="table table-bordered table-stripped table-hover">
             <thead>
-                <th>ID</th>
-                <th>Product</th>
-                <th>Price/Kg</th>
-                <th>Product image</th>
-                <th>Delete</th>
+                <th>Seller Name</th>
+                <th>Seller Email</th>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Seller contact no</th>
             </thead>
 
             <tbody>
                 <?php 
                     include 'partials/_dbconnect.php';
-                    if(isset($_POST['view'])){
-                            $displayquery = "SELECT * FROM `imgupload` WHERE `email`= '{$email}'";
+                    
+                            $displayquery = "SELECT * FROM `confirm` WHERE `buyeremail`= '{$bemail}'";
                             $querydisplay = mysqli_query($conn, $displayquery);
 
                             $row = mysqli_num_rows($querydisplay);
@@ -49,16 +49,16 @@ $email=$_SESSION['emailid'];
                             {
                                 ?>
                                 <tr>
-                                    <td><?php echo $result['id']?></td>
-                                    <td><?php echo $result['product'];?></td>
-                                    <td><?php echo $result['price'];?></td>
-                                    <td><img src=" <?php echo $result['image'];?>" height="100px" width="100px" ></td>
-                                    <td><a href="delete.php?id=<?php echo $result['id']; ?>" data-toggle="tooltip" data-placement="bottom" title="DELETE"> <i class="fa fa-trash" aria-hidden="true"></i> </a></td>
-                                </tr>
+                                    <td><?php echo $result['sellername']?></td>
+                                    <td><?php echo $result['selleremail'];?></td>
+                                    <td><?php echo $result['product id'];?></td>
+                                    <td><?php echo $result['product name'];?></td>
+                                    <td><?php echo $result['seller contact no'];?></td>
+                                    </tr>
                                 <?php
                             }
                        // }
-                    }
+                    
                 ?>
             </tbody>
 

@@ -1,0 +1,92 @@
+#title {
+    background-color: #131713;
+    color: #fff;
+    height:150px;
+  }
+ 
+ body {
+     display: flex;
+     justify-content: center;
+     background-image: url('bg-image.png');
+     font-size: 1.5rem;
+ }
+
+ .form-group {
+     margin-top: 1rem;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+
+ .container{
+     margin: 0;
+    font-family: 'Montserrat', sans-serif;    
+    margin-top: 10rem;
+    display: block;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+    height: 38rem;
+    width: 30rem;
+    background-color: rgb(203, 203, 203);
+    border-radius: 1rem;
+    transition: 0.3s linear;
+ }
+
+  .container:hover{
+     border: none;
+     outline:none;
+     box-shadow : 4px 3px 5px rgb(170, 170, 170);
+ } 
+
+ .price {
+     margin-right: 1rem;
+ }
+
+ #button{
+    background-color: rgb(113, 184, 113);
+    font-size: 1.3rem;
+    margin-top: 2.4rem;
+    margin-left: 6rem;
+    height: 2.6rem;
+    width: 9rem;
+    border-radius: 0.4rem;
+    border: none;
+    color: white;
+ }
+
+ #button:hover{
+    cursor: pointer;
+ }
+
+ #button:active{
+    background-color: lightgreen;
+    color: black;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin: 0;
+    height: 6rem;
+    margin-left: -35rem;
+    margin-top: 2rem;
+}
+
+.site-name{
+    padding-top: rem;
+    font-family: 'Sacramento',cursive;
+    font-size: 3rem;
+    padding-top: 3rem;
+    padding-left: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
